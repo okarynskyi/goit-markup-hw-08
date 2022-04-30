@@ -1,0 +1,33 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-pic {
+    position: relative;
+}
+
+.work-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.work-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
