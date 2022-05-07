@@ -807,21 +807,11 @@ img {
 
 .team {
   background-color: var(--background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.employees {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .employees-card {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -833,8 +823,6 @@ img {
   border-radius: 4px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .employees-name {
@@ -854,6 +842,48 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .employees-card {
+    margin-bottom: 30px;
+  }
+  .employees-content-wrapper {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .employees-card {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .employees-content-wrapper {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .employees-card {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .employees-content-wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .clients {
