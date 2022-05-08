@@ -448,6 +448,7 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 10;
   }
   .mobile-menu-btn {
     background-color: transparent;
