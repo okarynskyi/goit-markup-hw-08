@@ -105,7 +105,11 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list-link {
@@ -363,6 +367,7 @@ img {
 .contact-form__submit-btn {
   display: block;
   margin: 0 auto;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -857,12 +862,8 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .employees-card {
+  .employees-card:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .employees-content-wrapper {
-    padding-left: 122px;
-    padding-right: 122px;
   }
 }
 
@@ -878,10 +879,6 @@ img {
     margin-left: 30px;
     margin-top: 30px;
   }
-  .employees-content-wrapper {
-    padding-left: 74px;
-    padding-right: 74px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -891,10 +888,6 @@ img {
   }
   .employees-card {
     flex-basis: calc((100% - 120px) / 4);
-  }
-  .employees-content-wrapper {
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 

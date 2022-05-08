@@ -33,7 +33,6 @@
 
 .filter-list {
   margin-right: 8px;
-  margin-bottom: 15px;
 
   &:last-child {
     margin-right: 0;
@@ -133,10 +132,10 @@
 @media screen and (max-width: 767px) {
   .filter {
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
-  .filter-list {
+  .filter-list:first-child {
     margin-bottom: 15px;
   }
 }
